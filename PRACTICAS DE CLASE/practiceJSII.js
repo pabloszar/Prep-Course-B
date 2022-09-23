@@ -71,13 +71,13 @@ function puedeManejar(edad) {
     
 function dominiosDeInternet(dominio){ 
     if(dominio === 'us'){
-        return 'Es de Estados Unidos'
+        return 'Es de Estados Unidos';
     } else if(dominio === 'mx'){       
-        return 'Es de México'
+        return 'Es de México';
     } else if(dominio === 'co'){
-        return 'Es de Colombia'
+        return 'Es de Colombia';
     } else {
-        return 'No sabo de dónde es :('    
+        return 'No sabo de dónde es :(';    
     }
 }
 
