@@ -8,6 +8,11 @@ function imprimirSumaNumeros() {
     // Imprime la suma de los números del 1 al 10
     // Pista: usa un acumulador
     // Tu código:
+    var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var imprimirSumaNumeros = numeros.reduce(function(acc, elemento){
+      return acc + elemento;
+    });
+    return imprimirSumaNumeros;
 }
 
 function encuentraPares(array){
@@ -20,6 +25,10 @@ function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
+  var elevaAlCuadrado = array.map(function(elemento){
+    return elemento ** 2;
+  });
+  return elevaAlCuadrado;
 }
 
 function sumaArray(array){
