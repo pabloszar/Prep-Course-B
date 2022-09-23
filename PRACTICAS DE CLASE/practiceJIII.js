@@ -130,3 +130,36 @@ VM880:2 Lasagna
 VM880:2 Pizza
 
 //.FOREACH .forEach  Agrega una función para cada elemento CALLBACK.
+comidas.forEach
+
+//.map   --  Aplica una función a cada uno de los elementos
+var numeros =[2, 3, 4, 5];
+
+var doble = numeros.map(function(elemento){
+    return elemento * 2
+});
+
+doble
+(4) [4, 6, 8, 10]
+
+
+//.reduce  --  Tiene un contador y el elemento.
+var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+var suma = numeros.reduce(function(acc, elemento) {
+    return acc + elemento;
+});
+
+console.log(suma)
+VM2670:1 45
+
+
+
+var palabras = ["Hola,", "mi", "nombre", "es", "Martin"];
+
+var frases = palabras.reduce(function (acc, elemento) {
+    return acc + " " + elemento;
+  }, "Frase completa:");
+
+  console.log(frases);
+VM2610:1 Frase completa: Hola, mi nombre es Martin
