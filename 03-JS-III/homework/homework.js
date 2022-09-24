@@ -18,28 +18,59 @@ function imprimirSumaNumeros() {
 function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
-  // Tu código:
-}
+  // Tu código: 
+  var pares =[];
+
+  for(var i = 0; i < array.length; i++){
+    if(array[i] % 2 === 0){
+      pares.push(array[i]);
+    }
+  }
+  return pares;
+}  
 
 function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
+/*
+  return array.map (function(valor){
+    return valor ** 2;
+  });
+  */
+
   var elevaAlCuadrado = array.map(function(elemento){
     return elemento ** 2;
   });
   return elevaAlCuadrado;
 }
 
+
 function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
+/*
+var acumulador = 0;
+
+for(var i = 0; i < array.length; i++){
+  acumulador = acumulador + array[i];
+}
+return acumulador
+*/
+  var total = array.reduce(function(acc, elemento){
+    return acc + elemento;
+  });
+  return total;
 }
 
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
+/*var num = num + '';
+return num.length; */
+
+return num.toString().length
 }
   
   
