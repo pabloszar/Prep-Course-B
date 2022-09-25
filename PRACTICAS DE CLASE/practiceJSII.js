@@ -12,9 +12,10 @@ logHola('Ramses', 'Guerrero')
 
 function sumarDosNúmeros(a,b)
 {
-... var suma = a + b;
-... return suma;
-... }
+ var suma = a + b;
+ return suma;
+}
+
 
 sumarDosNúmeros(5,6)
 11
@@ -22,9 +23,9 @@ sumarDosNúmeros(5,6)
 //Se puede realizar sin "var" variable
 function sumarDosNúmeros(a,b)
 {
-... var suma = a + b;
-... return suma;
-... }
+ var suma = a + b;
+ return suma;
+ }
 
 sumarDosNúmeros(5,6)
 11
@@ -33,12 +34,12 @@ sumarDosNúmeros(5,6)
 // CONDICIONALES "IF" "ELSE"
 
 function puedeManejar(edad) {
-    ... if (edad >= 18) {
-    ..... return true;
-    ..... } else {
-    ..... return false;
-    ..... }
-    ... }
+     if (edad >= 18) {
+     return true;
+     } else {
+     return false;
+     }
+     }
     undefined
     > puedeManejar(56)
     true
@@ -49,12 +50,12 @@ function puedeManejar(edad) {
 
 // Ejemplo más de una condición IF
     function puedeManejar(edad) {
-        ... if (edad >= 18 && edad < 80) { 
-        ..... return true;
-        ..... } else {
-        ..... return false;
-        ..... }
-        ... }
+         if (edad >= 18 && edad < 80) { 
+         return true;
+         } else {
+         return false;
+         }
+         }
         undefined
         > puedeManejar(99)
         false

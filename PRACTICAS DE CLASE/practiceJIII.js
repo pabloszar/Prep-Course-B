@@ -60,11 +60,11 @@ while(count < 6){
     console.log('count es: ' + count);
     count ++;
 }
-count 1
-count 2
-count 3
-count 4
-count 5
+ 1
+ 2
+ 3
+ 4
+ 5
 5
 
 
@@ -117,7 +117,7 @@ undefined
 for (var i = 0; i < comidas.length; i++) {
     console.log(comidas[i]);
 }
-Hot dog
+'Hot dog'
 Lasagna
 Pizza
 
@@ -125,9 +125,9 @@ Pizza
 for(comidas of comidas){
     console.log(comidas);
 }
-VM880:2 Hot dog
-VM880:2 Lasagna
-VM880:2 Pizza
+ 'Hot dog'
+ Lasagna
+ Pizza
 
 //.FOREACH .forEach  Agrega una función para cada elemento CALLBACK.
 comidas.forEach
@@ -151,7 +151,7 @@ var suma = numeros.reduce(function(acc, elemento) {
 });
 
 console.log(suma)
-VM2670:1 45
+45
 
 
 
@@ -161,5 +161,5 @@ var frases = palabras.reduce(function (acc, elemento) {
     return acc + " " + elemento;
   }, "Frase completa:");
 
-  console.log(frases);
-VM2610:1 Frase completa: Hola, mi nombre es Martin
+  console.log(frases)
+  "Frase completa: Hola, mi nombre es Martin"
