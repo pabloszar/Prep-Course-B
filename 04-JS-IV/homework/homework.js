@@ -25,11 +25,6 @@ function agregarPropiedad (objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  var objeto = {
-    property: 'null'
-  }
-objeto['objeto'] = 'null';
-  return objeto;
 }
 
 function invocarMetodo (objeto, metodo) {
@@ -43,7 +38,14 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+  var vacio = 1;
+  var objetoMisterioso = {
+    numeroMisterioso: vacio
+  }
+  
+  objetoMisterioso['numeroMisterioso'] = objetoMisterioso['numeroMisterioso'] * 5;
+  
+  return objetoMisterioso['numeroMisterioso'];
 }
 
 function eliminarPropiedad (objeto, unaPropiedad) {
@@ -51,6 +53,13 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  var prop = unaPropiedad;
+  objeto = {
+  }
+objeto[prop] = '';
+
+  delete objeto[prop]; 
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
